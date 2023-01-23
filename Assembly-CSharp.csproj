@@ -36,12 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Loading\load_scene.cs" />
-     <Compile Include="Assets\Scripts\Wave\wave.cs" />
-     <Compile Include="Assets\Scripts\Player\player_move.cs" />
-     <Compile Include="Assets\Scripts\Player\open_menu_shop.cs" />
-     <Compile Include="Assets\Scripts\Buttons\shop\button_shop.cs" />
-     <Compile Include="Assets\Scripts\Loading\loading.cs" />
+     <Compile Include="Assets\Scripts\Loading\LoadScene.cs" />
+     <Compile Include="Assets\Scripts\Wave\Wave.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
+     <Compile Include="Assets\Scripts\Player\OpenMenuShop.cs" />
+     <Compile Include="Assets\Scripts\Buttons\Shop\ButtonShop.cs" />
+     <Compile Include="Assets\Scripts\Loading\Loading.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Unity\2020.3.44f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

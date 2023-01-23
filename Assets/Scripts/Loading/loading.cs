@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class loading : MonoBehaviour
+public class Loading : MonoBehaviour
 {
-    [SerializeField] private float time;
+    [SerializeField] private float _time;
+    [SerializeField] private GameObject _panelLoad;
+    [SerializeField] private GameObject _timer;
 
-    public GameObject panel_load;
-    public GameObject object_timer;
     private void FixedUpdate()
     {
-        time += Time.deltaTime;
-        if(time >= 5)
+        _time += Time.deltaTime;
+        if(_time >= 5)
         {
-            panel_load.SetActive(false);
-            Destroy(object_timer);
+            _panelLoad.SetActive(false);
+            Destroy(_timer);
         }
     }
 }
