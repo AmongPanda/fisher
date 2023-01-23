@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{27AB3609-15DB-52E3-4D4E-5A489B4C4689}</ProjectGuid>
+    <ProjectGuid>{DC981710-0B5C-7ADD-3063-5CFF33270E38}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,11 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\skript\loading\load_scene.cs" />
+    <Compile Include="Assets\skript\wave\wave.cs" />
     <Compile Include="Assets\skript\player\player_move.cs" />
     <Compile Include="Assets\skript\player\open_menu_shop.cs" />
     <Compile Include="Assets\skript\button\shop\button_shop.cs" />
     <Compile Include="Assets\skript\loading\loading.cs" />
-    <Compile Include="Assets\skript\wave\wave.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
