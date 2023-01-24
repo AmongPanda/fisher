@@ -37,11 +37,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Loading\LoadScene.cs" />
-     <Compile Include="Assets\Scripts\Wave\Wave.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
+     <Compile Include="Assets\Scripts\Wave\wave.cs" />
+     <Compile Include="Assets\Scripts\Player\Movement.cs" />
      <Compile Include="Assets\Scripts\Player\OpenMenuShop.cs" />
-     <Compile Include="Assets\Scripts\Buttons\Shop\ButtonShop.cs" />
-     <Compile Include="Assets\Scripts\Loading\Loading.cs" />
+     <Compile Include="Assets\Scripts\Buttons\shop\ButtonShop.cs" />
+     <Compile Include="Assets\Scripts\Loading\loading.cs" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Unity\2020.3.44f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -674,6 +675,12 @@
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Editor">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll</HintPath>
