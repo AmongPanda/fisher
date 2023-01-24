@@ -36,13 +36,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Bitgem\StylisedWater\URP\Scripts\Bitgem\VFX\StylisedWater\WaterVolumeTransforms.cs" />
+     <Compile Include="Assets\Scripts\Player\Movement.cs" />
+     <Compile Include="Assets\Bitgem\StylisedWater\URP\Scripts\Bitgem\VFX\StylisedWater\WaterVolumeBase.cs" />
+     <Compile Include="Assets\Bitgem\StylisedWater\URP\Scripts\Bitgem\VFX\StylisedWater\WaterVolumeBox.cs" />
+     <Compile Include="Assets\Scripts\Buttons\shop\ButtonShop.cs" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Loading\LoadScene.cs" />
      <Compile Include="Assets\Scripts\Wave\wave.cs" />
-     <Compile Include="Assets\Scripts\Player\Movement.cs" />
+     <Compile Include="Assets\Bitgem\StylisedWater\URP\Scripts\Bitgem\Core\FlagEnumAttribute.cs" />
+     <Compile Include="Assets\Bitgem\StylisedWater\URP\Scripts\Bitgem\VFX\StylisedWater\WaterVolumeHelper.cs" />
      <Compile Include="Assets\Scripts\Player\OpenMenuShop.cs" />
-     <Compile Include="Assets\Scripts\Buttons\shop\ButtonShop.cs" />
-     <Compile Include="Assets\Scripts\Loading\loading.cs" />
-     <Compile Include="Assets\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Bitgem\StylisedWater\URP\Scripts\Bitgem\VFX\StylisedWater\WateverVolumeFloater.cs" />
+     <Compile Include="Assets\Scripts\Loading\Loading.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Unity\2020.3.44f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -625,11 +631,17 @@
     <Reference Include="Unity.2D.PixelPerfect">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -643,6 +655,9 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.IK.Editor">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
@@ -655,8 +670,8 @@
     <Reference Include="Unity.2D.Path.Editor">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -667,8 +682,14 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
@@ -676,11 +697,17 @@
     <Reference Include="Unity.2D.IK.Runtime">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Cinemachine">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Editor">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll</HintPath>
@@ -690,6 +717,12 @@
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -705,6 +738,9 @@
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+        <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>C:\Users\New\Desktop\Fisher\fisher\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>

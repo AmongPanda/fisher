@@ -5,7 +5,6 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] private float _maxSpeed = 30f;
-    [SerializeField] private float _minSpeed = 10f;
     [SerializeField] private float _curSpeed = 0f;
     [SerializeField] private float _timeAcceleration;
     [SerializeField] private SpriteRenderer _skinBoat;
@@ -41,17 +40,13 @@ public class Movement : MonoBehaviour
             _rb.MoveRotation(-15);
         }
 
-        if(!_move && _curSpeed > 0)
+        if(!_move && _rb.velocity.x > 0)
         {
-            _curSpeed -= Time.deltaTime;
+            _rb.velocity = new Vector2(_rb.velocity.x - Time.deltaTime, 0);
         }
     }
 
-    private void ResetSpeed()
-    {
-        
-    }
-
+    public void ResetSpeed() => _curSpeed = 0;
     public void Move(bool move) => _move = move;
     public void Direction(bool direction) => _left = direction;
 
