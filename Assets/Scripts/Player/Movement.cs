@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float _maxSpeed = 30f;
     [SerializeField] private float _curSpeed = 0f;
     [SerializeField] private float _timeAcceleration;
-    [SerializeField] private SpriteRenderer _skinBoat;
+    [SerializeField] private GameObject _skinBoat;
     private Rigidbody2D _rb;
 
     private bool _move;
@@ -26,8 +26,7 @@ public class Movement : MonoBehaviour
                 _curSpeed += Time.deltaTime/_timeAcceleration;
             Vector2 direction = new Vector3(1, 0);
             _rb.AddForce(direction * _curSpeed);
-            _rb.MoveRotation(15);
-            _skinBoat.transform.rotation = new Quaternion(0, 0, 0, 0);
+            _skinBoat.transform.rotation = new Quaternion(0, 180, 0, 0);
         }
         
         if(_move && !_left)
@@ -36,8 +35,7 @@ public class Movement : MonoBehaviour
                 _curSpeed += Time.deltaTime/_timeAcceleration;
             Vector2 direction = new Vector3(-1, 0);
             _rb.AddForce(direction * _curSpeed);
-            _skinBoat.transform.rotation = new Quaternion(0, 180, 0, 0);
-            _rb.MoveRotation(-15);
+            _skinBoat.transform.rotation = new Quaternion(0, 0, 0, 0);
         }
 
         if(!_move && _rb.velocity.x > 0)
